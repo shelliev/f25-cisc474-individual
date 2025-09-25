@@ -1,0 +1,37 @@
+[
+  {
+    "courseCode": "CISC 474",
+    "assignmentTitle": "A2: REST API Routes",
+    "studentEmail": "stu1@lms.test",
+    "attempt": 1,
+    "status": "SUBMITTED",
+    "answerText": "Implemented GET/POST, missing DELETE. Tests WIP.",
+    "submittedAt": "now"
+  },
+  {
+    "courseCode": "CISC 474",
+    "assignmentTitle": "A2: REST API Routes",
+    "studentEmail": "stu1@lms.test",
+    "attempt": 2,
+    "status": "SUBMITTED",
+    "answerText": "All CRUD routes complete with tests.",
+    "submittedAt": "now"
+  },
+  {
+    "courseCode": "CISC 474",
+    "assignmentTitle": "A1: String Utilities",
+    "studentEmail": "stu2@lms.test",
+    "attempt": 1,
+    "status": "SUBMITTED",
+    "answerText": "Two-pointer palindrome; tests included.",
+    "submittedAt": "now"
+  },
+  {
+    "courseCode": "CISC 361",
+    "assignmentTitle": "Perf: Quicksort Analysis",
+    "studentEmail": "stu3@lms.test",
+    "attempt": 1,
+    "status": "DRAFT",
+    "answerText": "Perf counters captured; analysis TODO."
+  }
+]

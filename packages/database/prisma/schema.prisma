@@ -12,9 +12,88 @@ generator client {
   output   = "../generated/client"
 }
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
+enum Role {
+  STUDENT
+  INSTRUCTOR
+  ADMIN
 }
+
+enum CourseRole {
+  INSTRUCTOR
+  STUDENT
+}
+
+enum MoodTag {
+  HAPPY
+  NEUTRAL
+  CONFUSED
+}
+
+model Assignment{
+  id String @id @default(uuid())
+  courseId String //foreign key
+  course Course @relation(fields: [courseId], references: [id])
+  assignmentTitle String
+  dueDate DateTime?
+  description String
+  dateCreated DateTime @default(now()) //this automatically stores the creation timestamp
+  submissions Submission[]
+
+}
+
+model Submission{
+  id  String @id @default(uuid())
+  userId String //fk
+  assignmentId String //Foreign Key, relation to Assignment
+  submittedAt DateTime @default(now())
+  grade Float?
+
+  moodSubmit MoodSubmission? //lets students add a mood reflection
+  assignment Assignment @relation(fields:[assignmentId], references:[id])//points to id in Assignment, one to many relationship
+  user User @relation(fields: [userId], references: [id])
+
+}
+model MoodSubmission {
+  id String @id @default(cuid())
+  submissionId String @unique
+  moodTag MoodTag
+  reflection String?
+  submittedAt DateTime @default(now())
+
+  submission Submission @relation(fields:[submissionId], references:[id])//links back to Submission
+}
+
+model Course {
+  id String @id @default(cuid())
+  courseCode String @unique
+  courseName String
+  description String?
+  enrollments Enrollment[]
+  assignments Assignment [] //so one course can have many assignments
+
+}
+model Enrollment {
+  id String @id @default(cuid())
+  userId String  //fk pointing to User model
+  courseId String
+  role CourseRole
+  course Course @relation(fields: [courseId], references:[id])
+  user User @relation(fields:[userId], references:[id])
+  @@unique([userId, courseId]) //this is composite unique constraint
+
+
+}
+
+model User {
+  id String @id @default(cuid())
+  email String?
+  password String?
+  firstName String
+  lastName String
+  role Role
+  //add emailVerify
+  enrollments Enrollment[]
+  submissions Submission[]
+}
+
+

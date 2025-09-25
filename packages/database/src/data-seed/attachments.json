@@ -1,0 +1,13 @@
+[
+  {
+    "submission": {
+      "courseCode": "CISC 474",
+      "assignmentTitle": "A2: REST API Routes",
+      "studentEmail": "stu1@lms.test",
+      "attempt": 2
+    },
+    "kind": "LINK",
+    "url": "https://gist.github.com/example/s1-a2-tests",
+    "name": "Jest tests gist"
+  }
+]

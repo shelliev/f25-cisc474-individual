@@ -1,0 +1,31 @@
+[
+  {
+    "submission": {
+      "courseCode": "CISC 474",
+      "assignmentTitle": "A2: REST API Routes",
+      "studentEmail": "stu1@lms.test",
+      "attempt": 1
+    },
+    "body": "Stuck on validation; next time I will stub handlers and add Zod earlier.",
+    "selfAssessment": 3,
+    "timeSpentMinutes": 120,
+    "strugglePoints": "Schema validation and 405 handling",
+    "nextSteps": "Add unit tests before wiring frontend",
+    "resourcesUsed": "MDN, Next.js docs",
+    "mood": "NEUTRAL"
+  },
+  {
+    "submission": {
+      "courseCode": "CISC 474",
+      "assignmentTitle": "A2: REST API Routes",
+      "studentEmail": "stu1@lms.test",
+      "attempt": 2
+    },
+    "body": "Improved by writing tests first; isolated DB adapter.",
+    "selfAssessment": 5,
+    "timeSpentMinutes": 90,
+    "nextSteps": "Add rate limiting and error middleware",
+    "resourcesUsed": "Project starter, Jest docs",
+    "mood": "HAPPY"
+  }
+]
