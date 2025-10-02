@@ -1,8 +1,0 @@
-[
-  { "email": "admin@lms.test", "name": "Administrator", "globalRole": "ADMIN" },
-  { "email": "stevent@lms.test", "name": "Steven Tran", "globalRole": "INSTRUCTOR" },
-  { "email": "kelvinv@lms.test", "name": "Kelvin V", "globalRole": "INSTRUCTOR" },
-  { "email": "charlottev@lms.test", "name": "Charlotte V", "globalRole": "STUDENT" },
-  { "email": "joselyn@lms.test", "name": "Joselyn J", "globalRole": "STUDENT" },
-  { "email": "jim@lms.test", "name": "Jim C", "globalRole": "STUDENT" }
-]

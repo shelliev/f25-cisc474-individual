@@ -1,5 +1,0 @@
-[
-  { "code": "CISC 474", "title": "Web Development", "description": "Modern web apps with Next.js" },
-  { "code": "CISC 361", "title": "Systems Programming", "description": "C systems, performance, tooling" },
-  { "code": "CISC 220", "title": "Data Structures", "description": "Core DS & algorithms" }
-]
