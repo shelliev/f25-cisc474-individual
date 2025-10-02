@@ -1,0 +1,7 @@
+id,email,password,firstName,lastName,role
+cmg8o8z570000otknlo9jrm22,prof@ud.edu,,Ada,Lovelace,INSTRUCTOR
+cmg8o8z7j0001otknhxvl980l,ta@ud.edu,,Alan,Turing,INSTRUCTOR
+cmg8o8z9p0002otknnh9e1jx8,grace@ud.edu,,Grace,Hopper,STUDENT
+cmg8o8zbx0003otknm5w71u97,linus@ud.edu,,Linus,Torvalds,STUDENT
+cmg8o8ze30004otknkw150l72,barbara@ud.edu,,Barbara,Liskov,STUDENT
+cmg8o8zg70005otkncgv7o58t,donald@ud.edu,,Donald,Knuth,STUDENT

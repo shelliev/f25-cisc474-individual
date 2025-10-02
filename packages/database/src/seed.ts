@@ -21,7 +21,7 @@ async function main() {
 
     const [cisc474, span300] = await Promise.all([
     prisma.course.create({
-      data: { courseCode: "CISC474-F25", courseName: "Software Engineering", description: "LMS MVP project course" },
+      data: { courseCode: "CISC474-F25", courseName: "Web Tech", description: "LMS MVP project course" },
     }),
     prisma.course.create({
       data: { courseCode: "SPAN300-F25", courseName: "Advanced Spanish", description: "Essay + conversation practice" },
@@ -67,7 +67,7 @@ async function main() {
     prisma.moodSubmission.create({ data: { submissionId: sub6.id, moodTag: MoodTag.CONFUSED, reflection: "Not sure what to write" } }),
     prisma.moodSubmission.create({ data: { submissionId: sub1.id, moodTag: MoodTag.NEUTRAL, reflection: "Finished but not my best" } }),
   ]);
-  console.log("✅ Seed complete");
+  console.log(" Seed complete");
 }
 
 
