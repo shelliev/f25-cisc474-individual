@@ -1,3 +1,5 @@
+import 'dotenv/config';//read .env before PrismaClient is constructed
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
